@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="220dp"
+        android:layout_height="59dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="32dp"
+        android:text="  Имя:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/surnameTextView"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/surnameTextView"
+        android:layout_width="220dp"
+        android:layout_height="59dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="36dp"
+        android:text="  Фамилия:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/PatronictextView"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/facultTextView"
+        android:layout_width="220dp"
+        android:layout_height="59dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="36dp"
+        android:text="Факультет:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/groupTextView"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/groupTextView"
+        android:layout_width="220dp"
+        android:layout_height="59dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="204dp"
+        android:text="Группа:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/editButton"
+        android:layout_width="211dp"
+        android:layout_height="116dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="64dp"
+        android:text="Редактировать"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/PatronictextView"
+        android:layout_width="220dp"
+        android:layout_height="59dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="36dp"
+        android:text="Отчество:"
+        android:textAlignment="viewStart"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/facultTextView"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
